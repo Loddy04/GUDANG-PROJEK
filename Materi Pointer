@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int angkas[] = {10,35,26,75,80};
+    int angkas[] = {33,65,79,45,89};
     int min = *angkas;
     int max = *angkas;
     float jumlah;
@@ -27,3 +27,4 @@ int main(){
     cout << "Jumlah Semua : " << jumlah << endl;
     cout << "Rerata : " << rata << endl;
 }
+
