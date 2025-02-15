@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int angkas[] = {10,35,26,75,80};
+    int min = *angkas;
+    int max = *angkas;
+    float jumlah;
+    float rata;
+
+    for (int i = 0; i < 5; i++) {
+    cout << "Semua elemen : " << *(angkas+i) << endl;
+    }
+    for (int i = 0; i < 5; i++) {
+        if (min > *(angkas+i)){
+        (min = *(angkas+i));
+        }
+        if (max < *(angkas+i)){
+        (max = *(angkas+i));
+        }
+        }
+    cout << "Nilai Min : " << min << endl;
+    cout << "Nilai Max : " << max << endl;
+    for (int i = 0; i < 5; i++) {
+        jumlah += *(angkas+i);
+        rata = jumlah/5;
+    }
+    cout << "Jumlah Semua : " << jumlah << endl;
+    cout << "Rerata : " << rata << endl;
+}
